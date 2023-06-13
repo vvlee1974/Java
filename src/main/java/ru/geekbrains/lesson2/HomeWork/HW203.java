@@ -1,9 +1,9 @@
 package ru.geekbrains.lesson2.HomeWork;
 
 import java.util.Arrays;
-import java.util.Iterator;
+
 import java.util.Random;
-import java.util.stream.IntStream;
+
 
 public class HW203 {
     public static void main(String[] args) {
