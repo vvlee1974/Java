@@ -45,7 +45,7 @@ public class HW203 {
     private static int getIndexSum(int[] array) {
         int indexSum = 0;
         for (int i = 0; i < array.length; i++) {
-            if (Math.abs(array[i]) / 10 != 0) indexSum += i;
+            if (Math.abs(array[i]) / 10 != 0 && Math.abs(array[i]) / 10 < 10) indexSum += i;
         }
         return indexSum;
     }
