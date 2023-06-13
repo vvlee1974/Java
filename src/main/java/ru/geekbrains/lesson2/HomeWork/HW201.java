@@ -3,7 +3,7 @@ package ru.geekbrains.lesson2.HomeWork;
 import java.util.Scanner;
 
 public class HW201 {
-    //
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите количество чисел последовательности: ");
