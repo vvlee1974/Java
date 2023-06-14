@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Product product1 = new Product("Наивысший балл", 750, "1 сорт");
+        Product product1 = new Product("высший", 1450, "4 сорт");
         Product product2 = new Product("Высший  пилотаж", 900, "2 сорт");
         Product product3 = new Product("Высший", 1500, "3 сорт");
-        Product product4 = new Product("высший", 1450, "4 сорт");
+        Product product4 = new Product("Наивысший балл", 750, "1 сорт");
         ArrayList<Product> listProduct = new ArrayList<>();
         listProduct.add(product1);
         listProduct.add(product2);
