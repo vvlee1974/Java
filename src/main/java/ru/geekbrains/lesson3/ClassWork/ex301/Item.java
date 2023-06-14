@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson3.ClassWork.Ex301;
+package ru.geekbrains.lesson3.ClassWork.ex301;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
