@@ -53,20 +53,20 @@ public class Main {
             if (product.getPrice() <= p) {
                 if (product.getName().contains(n)) {
                     p = product.getPrice();
-                    result.append(product.getName()).append(" - ").append(product.getPrice()).append("; ");
+                    result.append(product.getName()).append(" - ").append(product.getPrice()).append("\n");
                 }else {
-                    result.append(product.getName()).append(" - ").append(product.getPrice()).append("; ");
+                    result.append(product.getName()).append(" - ").append(product.getPrice()).append("\n");
                     p = product.getPrice();
                     n = product.getName();
                 }
             } else if (!product.getName().contains(n)) {
                 p = product.getPrice();
                 n = product.getName();
-                result.append(product.getName()).append(" - ").append(product.getPrice()).append("; ");
+                result.append(product.getName()).append(" - ").append(product.getPrice()).append("\n");
             }
             i++;
         }
-        System.out.println("Самые бюджетные товары " + grade + " сорта: " + result);
+        System.out.println("Самые бюджетные товары " + grade + " сорта: \n" + result);
     }
 
     /**
