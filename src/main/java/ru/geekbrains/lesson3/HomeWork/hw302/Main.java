@@ -39,10 +39,10 @@ public class Main {
     }
 
     /**
+     * @param listSort входящий отсортированный массив
+     * @param grade    заданный сорт
      * @apiNote Сведения о товаре состоят из наименования, страны-производителя, веса, цены, сорта.
      * Получить наименования товаров заданного сорта с наименьшей ценой.
-     * @param listSort входящий отсортированный массив
-     * @param grade заданный сорт
      */
     private static void nameMinPrice(ArrayList<Products> listSort, String grade) {
         int i = 0;
@@ -54,7 +54,7 @@ public class Main {
                 if (product.getName().contains(n)) {
                     p = product.getPrice();
                     result.append(product.getName()).append(" - ").append(product.getPrice()).append("\n");
-                }else {
+                } else {
                     result.append(product.getName()).append(" - ").append(product.getPrice()).append("\n");
                     p = product.getPrice();
                     n = product.getName();
@@ -70,8 +70,8 @@ public class Main {
     }
 
     /**
-     * @param list входящий массив
-     * @param grade  заданный сорт
+     * @param list  входящий массив
+     * @param grade заданный сорт
      * @return отсортированный массив (по  сорту)
      */
     private static ArrayList<Products> listSort(ArrayList<Products> list, String grade) {
@@ -84,4 +84,4 @@ public class Main {
         }
         return result;
     }
-        }
+}
