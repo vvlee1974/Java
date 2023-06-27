@@ -37,11 +37,11 @@ public class NotebookFilter extends Notebook{
                     filteredNotebooks.add(notebook);
                     break;
                 } else if (Objects.equals(filterKey, "os") &&
-                        notebook.getOs().equals(filterValue)) {
+                        notebook.getOs().toLowerCase().equals(filterValue)) {
                     filteredNotebooks.add(notebook);
                     break;
                 } else if (Objects.equals(filterKey, "color") &&
-                        notebook.getColor().equals(filterValue)) {
+                        notebook.getColor().toLowerCase().equals(filterValue)) {
                     filteredNotebooks.add(notebook);
                     break;
                 } else if (Objects.equals(filterKey, "price") &&
