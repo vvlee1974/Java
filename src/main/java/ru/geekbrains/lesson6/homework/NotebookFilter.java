@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-public class NotebookFilter extends Notebook{
+public class NotebookFilter extends Notebook {
     /**
      * @param notebooks входящий список ноутбуков
      * @param filters   критерии фильтрации через Map
@@ -45,8 +45,8 @@ public class NotebookFilter extends Notebook{
                     filteredNotebooks.add(notebook);
                     break;
                 } else if (Objects.equals(filterKey, "price") &&
-                        notebook.getPrice().equals(filterValue)) {
-                    filteredNotebooks.add(notebook);
+                        notebook.getPrice() >= (int) filterValue) {
+                            filteredNotebooks.add(notebook);
                     break;
                 }
             }
