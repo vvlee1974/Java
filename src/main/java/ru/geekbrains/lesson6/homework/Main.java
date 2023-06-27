@@ -16,11 +16,11 @@ public class Main {
         notebooks.add(new Notebook("Acer", "Aspire 1 A 115-32-P859", 15,
                 8, 128, "Win11", "White", 28000));
         notebooks.add(new Notebook("Acer", "Aspire 3 A 314-35-P7C5", 14,
-                8, 256, "Win11", "White", 31000));
+                8, 256, "Win10", "White", 31000));
         notebooks.add(new Notebook("Acer", "Nitro 5 AN 515-46-R7XU", 14,
                 16, 512, "Win11", "White", 70000));
         notebooks.add(new Notebook("MSI", "Modern 15 B12M-215XRU", 15,
-                8, 256, "Win11", "White", 40000));
+                8, 256, "Win10", "White", 40000));
         notebooks.add(new Notebook("MSI", "Katana 11SC-483XRU", 15,
                 8, 256, "Win11", "Black", 70000));
 
