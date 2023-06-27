@@ -26,7 +26,7 @@ public class Main {
 
         System.out.println("0 - Нет");
         System.out.println("1 - Да");
-        System.out.println("Хотите выбрать  фильтр? Нет / Да:");
+        System.out.println("Хотите выбрать  фильтр? Нет/Да:");
         Scanner scanner = new Scanner(System.in);
         int request = scanner.nextInt();
         int filterNumber = getFilterNumber(scanner, request, notebooks);
@@ -34,13 +34,13 @@ public class Main {
         System.out.println("===================================================================");
         System.out.println("0 - Нет");
         System.out.println("1 - Да");
-        System.out.println("Хотите выбрать другой фильтр? Нет / Да:");
+        System.out.println("Хотите выбрать другой фильтр? Нет/Да:");
         int choice = scanner.nextInt();
         while (choice != 0) {
             getSortNotebooks(filteredNotebooks, scanner, getFilterNumber(scanner, choice, filteredNotebooks));
             System.out.println("0 - Нет");
             System.out.println("1 - Да");
-            System.out.println("Хотите выбрать другой фильтр? Нет / Да:");
+            System.out.println("Хотите выбрать другой фильтр? Нет/Да:");
             choice = scanner.nextInt();
         }
         scanner.close();
@@ -106,7 +106,7 @@ public class Main {
     private static Map<String, Object> getFilterMap(Scanner scanner, Integer filterNumber) {
         String filterKey;
         Map<String, Object> filters = new HashMap<>();
-        if (filterNumber <= 8 && filterNumber >= 0) {
+        if (filterNumber <= 8 && filterNumber > 0) {
             switch (filterNumber) {
                 case 1 -> {
                     filterKey = "manufacturer";
